@@ -53,9 +53,10 @@
 	
 	function myFun(result){
 		var cityName = result.name; 
-		map.setCenter(cityName);
+	//	map.setCenter(cityName);
 	//	map.centerAndZoom(cityName,15);   
 	}
+	map.setCenter("南京");
 	map.centerAndZoom("南京",15);
 	var myCity = new BMap.LocalCity();
 	myCity.get(myFun);
